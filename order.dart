@@ -44,7 +44,7 @@ class OrderManager {
     
     allOrders.add(order);
     user.cart.clear();
-    print("Order placed! Total: \$${total.toStringAsFixed(2)} PKR");
+    print("Order placed! Total: ${total.toStringAsFixed(2)} PKR");
   }
   
   void viewUserOrder(User user) {
@@ -56,7 +56,7 @@ class OrderManager {
     }
     
     for (var order in userOrders) {
-      print("Order #${order.orderId} - \$${order.totalPrice.toStringAsFixed(2)} PKR");
+      print("Order #${order.orderId} - ${order.totalPrice.toStringAsFixed(2)} PKR");
       print("Date: ${order.orderDate.day}/${order.orderDate.month}/${order.orderDate.year}");
       for (var item in order.items) {
         print("  ${item.product.name} x${item.quantity}");

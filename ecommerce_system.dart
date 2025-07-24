@@ -85,7 +85,7 @@ class ECommerceSystem {
       total += itemTotal;
       print("${item.product.name}");
       print("  Quantity: ${item.quantity} x ${item.product.price.toStringAsFixed(2)}PKR");
-      print("  Subtotal: \$${itemTotal.toStringAsFixed(2)}");
+      print("  Subtotal: PKR ${itemTotal.toStringAsFixed(2)}");
       print("------------------------------");
     }
     
